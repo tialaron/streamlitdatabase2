@@ -31,7 +31,7 @@ def read_state_df(engine,session_id):
 if __name__ == '__main__':
 
     #Creating PostgreSQL client
-    engine = create_engine('postgresql://<username>:<password>@localhost:5432/<database name>')
+    engine = create_engine('postgresql://postgres:warhammer@localhost:5432/mytable')
 
     #Getting session ID
     session_id = get_session_id()
